@@ -9,7 +9,7 @@ import storeStateMiddleware from "../middleware/storeStateMiddleware";
 
 export const StateContext = createContext(null);
 
-export const STORED_STATE_KEY = "profileMeState";
+export const STORED_STATE_KEY = "profileMeLocalState";
 
 // Icon Store
 export const iconData = {
@@ -929,6 +929,13 @@ const initialState = {
       linkPrefix: "https://www.x.com/",
       linkSuffix: "",
     },
+    threads: {
+      path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/threads.svg",
+      darkPath:
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/threads-dark.svg",
+      linkPrefix: "https://www.threads.net/@",
+      linkSuffix: "",
+    },
     hashnode: {
       path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/hashnode.svg",
       linkPrefix: "https://",
@@ -951,6 +958,8 @@ const initialState = {
     },
     linkedin: {
       path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg",
+      darkPath:
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin-dark.svg",
       linkPrefix: "https://www.linkedin.com/in/",
       linkSuffix: "",
     },
@@ -981,6 +990,8 @@ const initialState = {
     },
     facebook: {
       path: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/facebook.svg",
+      darkPath:
+        "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/facebook-dark.svg",
       linkPrefix: "https://www.facebook.com/",
       linkSuffix: "",
     },
